@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hola</title>
+</head>
+<body>
+	<div class="container">
+    	<div class="box">Contenido del Div 1</div>
+    	<div class="box">Contenido del Div 2</div>
+	</div>
+<style>
+	/* Contenedor principal que usa Flexbox */
+.container {
+    display: flex;         /* Activamos Flexbox */
+    gap: 20px;             /* Espacio entre los divs */
+}
+
+/* Estilo para cada div dentro del contenedor */
+.box {
+    background-color: #4CAF50;  /* Color de fondo */
+    color: white;               /* Color del texto */
+    padding: 20px;              /* Relleno */
+    flex: 1;                    /* Hace que ambos divs ocupen el mismo espacio */
+    border-radius: 8px;         /* Bordes redondeados */
+    text-align: center;         /* Centrado del texto */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;  /* Si la pantalla es pequeña, los divs se apilan verticalmente */
+    }
+}
+
+</style>
+
+</body>
+</html>
